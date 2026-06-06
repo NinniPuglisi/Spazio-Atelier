@@ -1,4 +1,3 @@
-```tsx
 import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
