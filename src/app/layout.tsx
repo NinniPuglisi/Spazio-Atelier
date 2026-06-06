@@ -31,20 +31,24 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Spazio Atelier è uno studio di architettura e interior design fondato da Ninni Puglisi. Progetti residenziali, retail e commerciali sviluppati attraverso luce, materia e proporzione.",
+    "Ninni Puglisi è un architetto e interior designer con sede a Misterbianco, Catania. Spazio Atelier realizza progetti residenziali, commerciali e retail in Sicilia attraverso luce, materia e proporzione.",
 
   keywords: [
     "Ninni Puglisi",
     "Spazio Atelier",
-    "Architetto Sicilia",
     "Architetto Catania",
     "Architetto Misterbianco",
-    "Interior Design Sicilia",
+    "Studio di Architettura Catania",
+    "Studio di Architettura Sicilia",
     "Interior Designer Catania",
+    "Interior Design Sicilia",
     "Architettura Contemporanea",
+    "Progettazione Residenziale",
+    "Progettazione Commerciale",
     "Retail Design",
-    "Ristrutturazioni",
-    "Progettazione Architettonica",
+    "Ristrutturazioni Catania",
+    "Architettura d'Interni",
+    "Design di Interni",
   ],
 
   authors: [
@@ -58,11 +62,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ninni Puglisi | Spazio Atelier",
     description:
-      "Studio di architettura e interior design specializzato in progetti residenziali, retail e commerciali contemporanei.",
+      "Architetto e Interior Designer a Catania. Progetti residenziali, commerciali e retail sviluppati da Ninni Puglisi attraverso un approccio contemporaneo e minimale.",
     type: "website",
     locale: "it_IT",
     url: "https://studionp39.com",
     siteName: "Ninni Puglisi | Spazio Atelier",
+  },
+
+  alternates: {
+    canonical: "https://studionp39.com",
   },
 
   icons: {
@@ -82,7 +90,7 @@ export default function RootLayout({
       className={`${inter.variable} ${cormorant.variable}`}
     >
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
-
+        
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
@@ -106,7 +114,6 @@ export default function RootLayout({
         {children}
 
         <Footer />
-
       </body>
     </html>
   );
