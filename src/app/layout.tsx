@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -60,6 +61,8 @@ export const metadata: Metadata = {
       "Studio di architettura e interior design specializzato in progetti residenziali, retail e commerciali contemporanei.",
     type: "website",
     locale: "it_IT",
+    url: "https://studionp39.com",
+    siteName: "Ninni Puglisi | Spazio Atelier",
   },
 
   icons: {
@@ -79,6 +82,23 @@ export default function RootLayout({
       className={`${inter.variable} ${cormorant.variable}`}
     >
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8KRMFPP644');
+          `}
+        </Script>
+
         <Intro />
 
         <Header />
@@ -86,6 +106,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
+
       </body>
     </html>
   );
