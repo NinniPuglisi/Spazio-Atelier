@@ -59,18 +59,20 @@ export const metadata: Metadata = {
 
   creator: "Ninni Puglisi",
 
+  metadataBase: new URL("https://studionp39.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "Ninni Puglisi | Spazio Atelier",
     description:
       "Architetto e Interior Designer a Catania. Progetti residenziali, commerciali e retail sviluppati da Ninni Puglisi attraverso un approccio contemporaneo e minimale.",
-    type: "website",
-    locale: "it_IT",
     url: "https://studionp39.com",
-    siteName: "Ninni Puglisi | Spazio Atelier",
-  },
-
-  alternates: {
-    canonical: "https://studionp39.com",
+    siteName: "Spazio Atelier",
+    locale: "it_IT",
+    type: "website",
   },
 
   icons: {
@@ -80,9 +82,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="it"
@@ -90,7 +92,7 @@ export default function RootLayout({
       className={`${inter.variable} ${cormorant.variable}`}
     >
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
-        
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
@@ -107,6 +109,39 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Schema.org SEO */}
+        <Script
+          id="schema-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Architect",
+              name: "Ninni Puglisi",
+              alternateName: "Spazio Atelier",
+              url: "https://studionp39.com",
+              image: "https://studionp39.com/favicon.ico",
+              telephone: "+393932989036",
+              email: "ninnipuglisi@studionp39.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Via Bruno Buozzi 39",
+                addressLocality: "Misterbianco",
+                postalCode: "95045",
+                addressRegion: "CT",
+                addressCountry: "IT",
+              },
+              sameAs: [
+                "https://www.instagram.com/ninni_puglisi/",
+              ],
+              areaServed: [
+                "Catania",
+                "Sicilia",
+              ],
+            }),
+          }}
+        />
+
         <Intro />
 
         <Header />
@@ -114,6 +149,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
+
       </body>
     </html>
   );
