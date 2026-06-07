@@ -4,7 +4,7 @@ import ProjectsGrid from "@/components/FeaturedProjects";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-title: "Ninni Puglisi | Studio di Architettura e Interior Design in Sicilia",
+title: "Ninni Puglisi | Spazio Atelier",
 description:
 "Spazio Atelier è uno studio di architettura e interior design fondato da Ninni Puglisi.",
 };
