@@ -5,7 +5,7 @@ import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
  title:
- "Studio | Ninni Puglisi | Architetto e Interior Designer a Catania",
+ "Studio | Ninni Puglisi | Spazio Atelier",
 
  description:
  "Scopri Spazio Atelier, lo studio di architettura e interior design fondato da Ninni Puglisi a Misterbianco, Catania. Progettazione architettonica, interior design, retail design, ristrutturazioni e direzione lavori in Sicilia.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
    canonical: "/studio",
  }, 
  openGraph: { 
-   title: "Ninni Puglisi | Architetto e Interior Designer a Catania", 
+   title: "Ninni Puglisi | Spazio Atelier", 
   
    description: "Spazio Atelier è uno studio di architettura e interior design specializzato in progetti residenziali, retail e commerciali contemporanei.",
   
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
    card: "summary_large_image", 
   
    title: 
-   "Ninni Puglisi | Architetto e Interior Designer a Catania", 
+   "Ninni Puglisi | Spazio Atelier", 
   
    description: 
    "Studio di architettura e interior design con sede a Misterbianco, Catania.", 
