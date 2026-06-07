@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://studionp39.com"),
 
   title: {
-    default: "Ninni Puglisi | Studio di Architettura e Interior Design",
+    default: "Ninni Puglisi | Spazio Atelier",
     template: "%s | Ninni Puglisi",
   },
 
