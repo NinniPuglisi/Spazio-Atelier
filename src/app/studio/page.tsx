@@ -4,9 +4,63 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-title: "Studio",
-description:
-"Scopri Spazio Atelier, lo studio fondato da Ninni Puglisi. Architettura, interior design, retail design, ristrutturazioni, direzione lavori e progettazione contemporanea in Sicilia.",
+ title:
+ "Studio | Ninni Puglisi | Architetto e Interior Designer a Catania",
+
+ description:
+ "Scopri Spazio Atelier, lo studio di architettura e interior design fondato da Ninni Puglisi a Misterbianco, Catania. Progettazione architettonica, interior design, retail design, ristrutturazioni e direzione lavori in Sicilia.",
+
+ keywords: [
+  "Ninni Puglisi", 
+  "Architetto Catania", 
+  "Architetto Misterbianco", 
+  "Interior Designer Catania", 
+  "Studio di Architettura Sicilia", 
+  "Studio di Architettura Catania", 
+  "Interior Design Sicilia", 
+  "Retail Design Sicilia", 
+  "Ristrutturazioni Catania", 
+  "Direzione Lavori", 
+  "Spazio Atelier", 
+ ],
+
+ alternates: {
+   canonical: "/studio",
+ }, 
+ openGraph: { 
+   title: "Ninni Puglisi | Architetto e Interior Designer a Catania", 
+  
+   description: "Spazio Atelier è uno studio di architettura e interior design specializzato in progetti residenziali, retail e commerciali contemporanei.",
+  
+   url: "https://studionp39.com/studio", 
+  
+   siteName: "Spazio Atelier", 
+  
+   locale: "it_IT", 
+  
+   type: "website",
+
+   images: [ 
+     { 
+       url: "/images/ninni-puglisi.jpg", 
+       width: 1200, 
+       height: 1600, 
+       alt: "Ninni Puglisi", 
+     }, 
+   ],
+ },
+
+ twitter: { 
+   card: "summary_large_image", 
+  
+   title: 
+   "Ninni Puglisi | Architetto e Interior Designer a Catania", 
+  
+   description: 
+   "Studio di architettura e interior design con sede a Misterbianco, Catania.", 
+  
+   images: ["/images/ninni-puglisi.jpg"], 
+ },
 };
 
 export default function StudioPage() {
