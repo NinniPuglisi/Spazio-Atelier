@@ -6,9 +6,65 @@ import FadeIn from "@/components/FadeIn";
 import GalleryLightbox from "@/components/GalleryLightbox";
 
 export const metadata: Metadata = {
-title: "MAX Boutique",
+title:
+"MAX Boutique | Retail Design e Interior Design Commerciale a Misterbianco | Ninni Puglisi",
+
 description:
-"Progetto retail firmato Ninni Puglisi. MAX Boutique è uno spazio commerciale contemporaneo sviluppato attraverso luce, materiali e dettagli su misura a Misterbianco.",
+"MAX Boutique è un progetto di retail design firmato da Ninni Puglisi a Misterbianco, Catania. Uno spazio commerciale contemporaneo progettato attraverso luce, materiali, dettagli su misura ed esperienza d'acquisto.",
+
+keywords: [ 
+  "MAX Boutique",
+  "Retail Design Catania", 
+  "Interior Design Commerciale", 
+  "Architetto Catania", 
+  "Boutique Design Sicilia", 
+  "Progettazione Negozi", 
+  "Architettura Commerciale", 
+  "Interior Designer Catania", 
+  "Misterbianco", 
+  "Ninni Puglisi", 
+  "Spazio Atelier", 
+],
+
+alternates: {
+  canonical: "/projects/max-boutique", 
+},
+
+openGraph: { 
+  title:
+   "MAX Boutique | Retail Design e Interior Design Commerciale",
+
+  description: "Uno spazio commerciale contemporaneo progettato da Ninni Puglisi a Misterbianco.",
+
+  url: "https://studionp39.com/projects/max-boutique",
+
+  siteName: "Spazio Atelier",
+
+  locale: "it_IT",
+
+  type: "article",
+
+  images: [ 
+    {
+      url: "/images/max-boutique-01.jpg", 
+      width: 1600, 
+      height: 900, 
+      alt: "MAX Boutique - Ninni Puglisi", 
+    }, 
+  ],
+},
+
+twitter: {
+ card: "summary_large_image",
+
+ title:
+  "MAX Boutique | Retail Design e Interior Design Commerciale",
+
+  description:
+  "Progetto retail contemporaneo firmato Ninni Puglisi.",
+
+  images: ["/images/max-boutique-01.jpg"],
+ }, 
 };
 
 export default function MaxBoutiquePage() {
