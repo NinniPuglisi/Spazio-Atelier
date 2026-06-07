@@ -6,10 +6,66 @@ import FadeIn from "@/components/FadeIn";
 import GalleryLightbox from "@/components/GalleryLightbox";
 
 export const metadata: Metadata = {
-title: "Villa D'E",
+title:
+"Villa D'E | Interior Design Residenziale a San Pietro Clarenza | Ninni Puglisi",
+
 description:
-"Progetto residenziale firmato Ninni Puglisi. Villa D'E è un intervento di interior design contemporaneo sviluppato attraverso luce, materia e proporzione a San Pietro Clarenza.",
-};
+"Villa D'E è un progetto di interior design residenziale firmato da Ninni Puglisi a San Pietro Clarenza, Catania. Un intervento contemporaneo sviluppato attraverso luce, materia, proporzione e continuità degli spazi.",
+
+keywords: [
+"Villa D'E",
+"Interior Design Catania",
+"Architetto Catania",
+"Interior Designer Catania",
+"Architetto San Pietro Clarenza",
+"Progetto Residenziale Sicilia",
+"Ristrutturazione Villa Catania",
+"Architettura Contemporanea",
+"Ninni Puglisi",
+"Spazio Atelier",
+],
+
+alternates: {
+canonical: "/projects/villa-de",
+},
+
+openGraph: {
+title:
+"Villa D'E | Interior Design Residenziale a San Pietro Clarenza",
+
+description:
+"Un progetto residenziale contemporaneo firmato Ninni Puglisi. Luce naturale, materiali raffinati e continuità spaziale.",
+
+url: "https://studionp39.com/projects/villa-de",
+
+siteName: "Spazio Atelier",
+
+locale: "it_IT",
+
+type: "article",
+
+images: [
+   { 
+    url: "/images/villa-de-01.png", 
+    width: 1600,
+    height: 900,
+    alt: "Villa D'E - Ninni Puglisi",
+    },
+  ]
+},
+
+twitter: {
+  card: "summary_large_image",
+
+  title:
+  "Villa D'E | Interior Design Residenziale a San Pietro Clarenza",
+
+  description:
+  "Progetto residenziale contemporaneo firmato Ninni Puglisi.",
+
+  images: ["/images/villa-de-01.png"],
+  },
+  };
 
 export default function VillaDEPage() {
 return ( <main className="bg-[#f5f4f1] text-black overflow-hidden">
