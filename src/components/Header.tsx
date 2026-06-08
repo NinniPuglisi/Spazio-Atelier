@@ -165,7 +165,7 @@ export default function Header() {
             <div className="flex gap-8 pt-6">
 
               <a
-                href="https://www.instagram.com/ninni_puglisi/"
+                href="https://www.instagram.com/NinniPuglisi_SpazioAtelier/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

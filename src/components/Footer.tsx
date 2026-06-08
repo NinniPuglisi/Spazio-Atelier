@@ -54,7 +54,7 @@ return ( <footer className="border-t border-neutral-300 py-12 md:py-16">
         <div className="flex items-center gap-5">
 
           <a
-            href="https://www.instagram.com/ninni_puglisi/"
+            href="https://www.instagram.com/NinniPuglisi_SpazioAtelier/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-60 transition"
