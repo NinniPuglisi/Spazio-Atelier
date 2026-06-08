@@ -164,7 +164,7 @@ export default function RootLayout({
               },
 
               sameAs: [
-                "https://www.instagram.com/ninni_puglisi/",
+                "https://www.instagram.com/NinniPuglisi_SpazioAtelier/",
               ],
 
               areaServed: [
