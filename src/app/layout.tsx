@@ -28,26 +28,31 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://studionp39.com"),
 
   title: {
-    default: "Ninni Puglisi | Spazio Atelier",
+    default:
+      "Ninni Puglisi | Spazio Atelier | Studio di Architettura e Interior Design in Sicilia",
     template: "%s | Ninni Puglisi",
   },
 
   description:
-    "Ninni Puglisi è un architetto e interior designer con sede a Misterbianco, Catania. Spazio Atelier realizza progetti residenziali, commerciali e retail in Sicilia attraverso luce, materia e proporzione.",
+    "Ninni Puglisi è un architetto e interior designer con sede a Misterbianco, Catania. Spazio Atelier realizza progetti residenziali, commerciali, retail e workspace in Sicilia attraverso luce, materia e proporzione.",
 
   keywords: [
     "Ninni Puglisi",
     "Spazio Atelier",
     "Architetto Catania",
     "Architetto Misterbianco",
+    "Architetto Sicilia",
     "Studio di Architettura Catania",
     "Studio di Architettura Sicilia",
     "Interior Designer Catania",
+    "Interior Designer Sicilia",
     "Interior Design Sicilia",
     "Architettura Contemporanea",
     "Progettazione Residenziale",
     "Progettazione Commerciale",
     "Retail Design",
+    "Workspace Design",
+    "Office Design",
     "Ristrutturazioni Catania",
     "Architettura d'Interni",
     "Design di Interni",
@@ -67,11 +72,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Ninni Puglisi | Spazio Atelier",
+
     description:
-      "Architetto e Interior Designer a Catania. Progetti residenziali, commerciali e retail sviluppati da Ninni Puglisi attraverso un approccio contemporaneo e minimale.",
+      "Architetto e Interior Designer a Catania. Progetti residenziali, commerciali, retail e workspace sviluppati da Ninni Puglisi attraverso un approccio contemporaneo e minimale.",
+
     url: "https://studionp39.com",
+
     siteName: "Spazio Atelier",
+
     locale: "it_IT",
+
     type: "website",
 
     images: [
@@ -86,9 +96,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Ninni Puglisi | Spazio Atelier",
+
     description:
-      "Architetto e Interior Designer a Catania. Progetti residenziali e commerciali contemporanei.",
+      "Architetto e Interior Designer a Catania. Progetti residenziali, commerciali e retail contemporanei.",
+
     images: ["/og-image.jpg"],
   },
 
@@ -111,6 +124,7 @@ export default function RootLayout({
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
 
         {/* Google Analytics */}
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
           strategy="afterInteractive"
@@ -127,15 +141,17 @@ export default function RootLayout({
         </Script>
 
         {/* Schema.org */}
+
         <Script
           id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ProfessionalService",
+              "@type": "Architect",
 
               name: "Ninni Puglisi",
+
               alternateName: "Spazio Atelier",
 
               url: "https://studionp39.com",
@@ -165,12 +181,14 @@ export default function RootLayout({
 
               sameAs: [
                 "https://www.instagram.com/NinniPuglisi_SpazioAtelier/",
+                "https://www.facebook.com/profile.php?id=100063646356789",
               ],
 
               areaServed: [
                 "Misterbianco",
                 "Catania",
                 "Sicilia",
+                "Italia",
               ],
             }),
           }}
