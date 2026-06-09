@@ -218,10 +218,10 @@ return ( <main className="bg-[#f5f4f1] text-black overflow-hidden">
       <FadeIn>
 
         <Link
-          href="/projects/villa-de"
+          href="/projects/piccolo-ufficio-alb"
           className="section-title hover:opacity-60 transition"
         >
-          Villa D&apos;E →
+          Piccolo Ufficio A.L.B. →
         </Link>
 
       </FadeIn>
