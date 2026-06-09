@@ -22,5 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://studionp39.com/projects/max-boutique",
       lastModified: new Date(),
     },
+    {
+      url: "https://studionp39.com/projects/piccolo-ufficio-alb",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://studionp39.com/contact",
+      lastModified: new Date(),
+    },
   ];
 }
