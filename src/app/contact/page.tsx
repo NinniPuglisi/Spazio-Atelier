@@ -2,9 +2,49 @@ import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-  title: "Contatti",
+  title:
+    "Contatti | Ninni Puglisi | Spazio Atelier | Architetto e Interior Designer a Catania",
+
   description:
-    "Contatta Ninni Puglisi e Spazio Atelier per progetti di architettura, interior design, retail design e ristrutturazioni in Sicilia.",
+    "Contatta Ninni Puglisi e Spazio Atelier a Misterbianco, Catania, per progetti di architettura, interior design, retail design e ristrutturazioni in Sicilia.",
+
+  keywords: [
+    "Contatti Ninni Puglisi",
+    "Spazio Atelier",
+    "Architetto Catania",
+    "Architetto Misterbianco",
+    "Interior Designer Catania",
+    "Studio di Architettura Sicilia",
+    "Interior Design Sicilia",
+  ],
+
+  alternates: {
+    canonical: "/contact",
+  },
+
+  openGraph: {
+    title: "Contatti | Ninni Puglisi | Spazio Atelier",
+
+    description:
+      "Contatta Ninni Puglisi per progetti di architettura e interior design a Catania e in Sicilia.",
+
+    url: "https://studionp39.com/contact",
+
+    siteName: "Spazio Atelier",
+
+    locale: "it_IT",
+
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Contatti | Ninni Puglisi | Spazio Atelier",
+
+    description:
+      "Architettura, interior design e retail design in Sicilia.",
+  },
 };
 
 export default function ContactPage() {
@@ -88,12 +128,12 @@ export default function ContactPage() {
                   </h2>
 
                   <a
-                    href="https://www.instagram.com/ninni_puglisi/"
+                    href="https://www.instagram.com/NinniPuglisi_SpazioAtelier/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-neutral-600 hover:text-black transition"
                   >
-                    @ninni_puglisi
+                    @NinniPuglisi_SpazioAtelier
                   </a>
                 </div>
 
@@ -107,7 +147,7 @@ export default function ContactPage() {
                     <br />
                     95045 Misterbianco (CT)
                     <br />
-                    Sicilia, Italia
+                    Catania · Sicilia · Italia
                   </p>
                 </div>
 
