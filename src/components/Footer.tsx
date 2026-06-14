@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
@@ -88,19 +89,49 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-12 md:mt-16 pt-8 border-t border-neutral-200 flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-sm text-neutral-500">
+        <div className="mt-12 md:mt-16 pt-8 border-t border-neutral-200">
 
-          <p>
-            © {new Date().getFullYear()} Ninni Puglisi | Spazio Atelier
-          </p>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-between text-sm text-neutral-500">
 
-          <p>
-            Architettura · Interior Design · Retail Design
-          </p>
+            <p>
+              © {new Date().getFullYear()} Ninni Puglisi | Spazio Atelier
+            </p>
+
+            <p>
+              Architettura · Interior Design · Retail Design
+            </p>
+
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-8 text-sm text-neutral-500">
+
+            <a
+              href="https://www.iubenda.com/privacy-policy/97183777"
+              className="iubenda-white iubenda-noiframe iubenda-embed hover:text-black transition"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="https://www.iubenda.com/privacy-policy/97183777/cookie-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition"
+            >
+              Cookie Policy
+            </a>
+
+          </div>
 
         </div>
 
       </div>
+
+      <Script
+        src="https://cdn.iubenda.com/iubenda.js"
+        strategy="afterInteractive"
+      />
 
     </footer>
   );
