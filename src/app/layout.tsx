@@ -123,19 +123,43 @@ export default function RootLayout({
     >
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
 
+        {/* Google Consent Mode v2 */}
+        <Script
+          id="google-consent-mode"
+          strategy="beforeInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+          `}
+        </Script>
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
           strategy="afterInteractive"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+
             gtag('js', new Date());
 
-            gtag('config', 'G-8KRMFPP644');
+            gtag('config', 'G-8KRMFPP644', {
+              anonymize_ip: true
+            });
           `}
         </Script>
 
@@ -155,7 +179,6 @@ export default function RootLayout({
               "@type": "Architect",
 
               name: "Ninni Puglisi",
-
               alternateName: "Spazio Atelier",
 
               url: "https://studionp39.com",
