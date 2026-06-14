@@ -124,7 +124,6 @@ export default function RootLayout({
       <body className="bg-[#f8f7f4] text-black antialiased overflow-x-hidden">
 
         {/* Google Analytics */}
-
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8KRMFPP644"
           strategy="afterInteractive"
@@ -140,8 +139,13 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Schema.org */}
+        {/* Iubenda */}
+        <Script
+          src="https://embeds.iubenda.com/widgets/35085e84-7c7f-40f7-bcbd-db4f6ac032bc.js"
+          strategy="afterInteractive"
+        />
 
+        {/* Schema.org */}
         <Script
           id="schema-org"
           type="application/ld+json"
