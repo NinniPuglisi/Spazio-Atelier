@@ -123,6 +123,24 @@ export default function Footer() {
 
           </div>
 
+          <div className="mt-8 pt-8 border-t border-neutral-200 text-xs text-neutral-500 leading-relaxed">
+
+            <p>
+              Antonino Puglisi – Architetto
+            </p>
+
+            <p>
+              P. IVA 05048810872
+            </p>
+
+            <p>
+              Iscritto all'Ordine degli Architetti,
+              Pianificatori, Paesaggisti e Conservatori
+              della Provincia di Catania – Sezione A n. 2111
+            </p>
+
+          </div>
+
         </div>
 
       </div>
