@@ -115,9 +115,8 @@ export default function Footer() {
 
             <a
               href="https://www.iubenda.com/privacy-policy/97183777/cookie-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-black transition"
+              className="iubenda-white iubenda-noiframe iubenda-embed hover:text-black transition"
+              title="Cookie Policy"
             >
               Cookie Policy
             </a>
