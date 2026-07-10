@@ -15,6 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: "https://studionp39.com/projects/villa-ce",
+      lastModified: new Date(),
+    },
+    {
       url: "https://studionp39.com/projects/villa-de",
       lastModified: new Date(),
     },
