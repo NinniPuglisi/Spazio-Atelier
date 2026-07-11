@@ -215,10 +215,10 @@ export default function PiccoloUfficioALBPage() {
           <FadeIn>
 
             <Link
-              href="/projects/villa-de"
+              href="/projects/villa-ce"
               className="section-title hover:opacity-60 transition"
             >
-              Villa D&apos;E →
+              Villa C|E →
             </Link>
 
           </FadeIn>
