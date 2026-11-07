@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy NP39 AI",
   description: "Informativa privacy relativa a NP39 AI e all'utilizzo delle API Google e Gmail.",
   alternates: { canonical: "/privacy" },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function PrivacyPage() {
@@ -32,7 +39,12 @@ export default function PrivacyPage() {
               <p>Spazio Atelier</p>
               <p>Via Bruno Buozzi 39, 95045 Misterbianco (CT), Italia</p>
               <p>P. IVA 05048810872</p>
-              <p>Email: <a href="mailto:ninnipuglisi@studionp39.com" className="underline underline-offset-4">ninnipuglisi@studionp39.com</a></p>
+              <p>
+                Email:{" "}
+                <a href="mailto:ninnipuglisi@studionp39.com" className="underline underline-offset-4">
+                  ninnipuglisi@studionp39.com
+                </a>
+              </p>
             </div>
           </div>
 
@@ -50,9 +62,26 @@ export default function PrivacyPage() {
           <div>
             <h2 className="text-3xl md:text-4xl mb-5">Dati Google e Gmail utilizzati</h2>
             <div className="space-y-5 text-neutral-600 leading-relaxed">
-              <p><strong className="text-black">Gmail in sola lettura.</strong> L&apos;app può leggere messaggi, intestazioni e allegati necessari a individuare e archiviare i documenti pertinenti alle automazioni configurate. La posta ricevuta non viene cancellata o modificata da questa funzione.</p>
-              <p><strong className="text-black">Creazione di bozze Gmail.</strong> Per il flusso DKV Mobility, NP39 AI può creare bozze email con gli allegati archiviati. Le bozze DKV non vengono inviate automaticamente dal sistema.</p>
-              <p><strong className="text-black">Invio di email.</strong> Un modulo separato di gestione scadenze può inviare email di promemoria esclusivamente quando una regola di scadenza precedentemente configurata viene soddisfatta e verso destinatari già definiti nel sistema.</p>
+              <p>
+                <strong className="text-black">Gmail in sola lettura.</strong>{" "}
+                L&apos;app può leggere messaggi, intestazioni e allegati necessari
+                a individuare e archiviare i documenti pertinenti alle
+                automazioni configurate. La posta ricevuta non viene cancellata
+                o modificata da questa funzione.
+              </p>
+              <p>
+                <strong className="text-black">Creazione di bozze Gmail.</strong>{" "}
+                Per il flusso DKV Mobility, NP39 AI può creare bozze email con
+                gli allegati archiviati. Le bozze DKV non vengono inviate
+                automaticamente dal sistema.
+              </p>
+              <p>
+                <strong className="text-black">Invio di email.</strong>{" "}
+                Un modulo separato di gestione scadenze può inviare email di
+                promemoria esclusivamente quando una regola di scadenza
+                precedentemente configurata viene soddisfatta e verso
+                destinatari già definiti nel sistema.
+              </p>
             </div>
           </div>
 
@@ -97,9 +126,15 @@ export default function PrivacyPage() {
             <p className="text-neutral-600 leading-relaxed">
               L&apos;utilizzo da parte di NP39 AI delle informazioni ricevute
               dalle API Google è conforme alla{" "}
-              <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+              <a
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4"
+              >
                 Google API Services User Data Policy
-              </a>, inclusi i requisiti di Limited Use applicabili.
+              </a>
+              , inclusi i requisiti di Limited Use applicabili.
             </p>
           </div>
 
@@ -120,9 +155,15 @@ export default function PrivacyPage() {
               Per i trattamenti relativi alla navigazione di studionp39.com,
               cookie, statistiche e servizi web è disponibile anche
               l&apos;informativa generale del sito gestita tramite Iubenda:{" "}
-              <a href="https://www.iubenda.com/privacy-policy/97183777" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+              <a
+                href="https://www.iubenda.com/privacy-policy/97183777"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4"
+              >
                 Privacy Policy generale
-              </a>.
+              </a>
+              .
             </p>
           </div>
 
@@ -130,13 +171,13 @@ export default function PrivacyPage() {
             <h2 className="text-3xl md:text-4xl mb-5">Contatti</h2>
             <p className="text-neutral-600 leading-relaxed">
               Per richieste relative alla presente informativa o all&apos;utilizzo
-              dei dati Google: <a href="mailto:ninnipuglisi@studionp39.com" className="underline underline-offset-4">ninnipuglisi@studionp39.com</a>.
+              dei dati Google:{" "}
+              <a href="mailto:ninnipuglisi@studionp39.com" className="underline underline-offset-4">
+                ninnipuglisi@studionp39.com
+              </a>
+              .
             </p>
           </div>
-
-          <Link href="/np39-ai" className="inline-block border border-black px-7 py-3 text-xs uppercase tracking-[0.25em] hover:bg-black hover:text-white transition-all duration-500">
-            Informazioni su NP39 AI
-          </Link>
         </div>
       </section>
     </main>
